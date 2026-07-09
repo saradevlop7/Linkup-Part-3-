@@ -14,21 +14,19 @@ class Post extends Model
         'content',
     ];
 
-    // Auteur du post
+    // Le post appartient à un utilisateur
     public function user()
     {
         return $this->belongsTo(User::class);
     }
 
-    // Commentaires du post
+    // Les commentaires du post
     public function comments()
     {
         return $this->hasMany(Comment::class);
     }
-
-    // Likes du post
     public function likes()
-    {
-        return $this->hasMany(Like::class);
-    }
+{
+    return $this->hasMany(Like::class);
+}
 }
