@@ -158,6 +158,7 @@
 
             <div class="bg-gray-100 rounded-2xl p-4 flex-1">
 
+                
                 <h4 class="font-semibold">
 
                     {{ $comment->user->name }}
